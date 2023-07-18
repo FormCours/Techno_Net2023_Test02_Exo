@@ -11,10 +11,13 @@ namespace Testing_02_Exo.BLL.Models
         public Purchase(Order order)
         {
             Order = order;
+            IsComplet = false;
         }
 
         public Order Order { get; set; }
         public Customer? Customer { get; set; }
+        public bool IsComplet { get; set; }
+
         public bool IsTakeAway { get; set; }
         public bool IsPaid { get; set; }
         public double Delivery { get; set; }
