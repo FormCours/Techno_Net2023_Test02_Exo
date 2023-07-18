@@ -10,10 +10,10 @@ namespace Testing_02_Exo.BLL.Interfaces
     public interface IPurchaseService
     {
         public Purchase? GetById(int id);
-        public IEnumerable<Purchase> GetOrderOfDay();
-        public IEnumerable<Purchase> GetOrderOfDay(DateTime date);
+        public IEnumerable<Purchase> GetPurchaseOfDay();
+        public IEnumerable<Purchase> GetPurchaseOfDay(DateTime date);
 
         public Purchase CreatePurchase(int orderId, Customer customer);
-        public bool CompletePurchase(int purchaseId, bool onDelivery);
+        public bool CompletePurchase(int orderId, bool onDelivery);
     }
 }
