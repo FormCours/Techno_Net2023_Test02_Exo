@@ -4,7 +4,7 @@
     {
         public class ProductOrder
         {
-            Product Product { get; set; }
+            public Product Product { get; set; }
             public int Quantity { get; set; }
         }
 
@@ -17,6 +17,6 @@
 
         public int Id { get; set; }
         public DateTime OrderDate { get; set; }
-        public IEnumerable<ProductOrder> ProductOrders { get; set; }
+        public List<ProductOrder> ProductOrders { get; set; }
     }
 }
