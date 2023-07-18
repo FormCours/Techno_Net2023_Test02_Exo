@@ -9,7 +9,7 @@ namespace Testing_02_Exo.BLL.Interfaces
 {
     public interface IOrderService
     {
-        public IEnumerable<Order> GetById();
+        public Order? GetById(int id);
         public IEnumerable<Order> GetOrderOfDay();
         public IEnumerable<Order> GetOrderOfDay(DateTime date);
 

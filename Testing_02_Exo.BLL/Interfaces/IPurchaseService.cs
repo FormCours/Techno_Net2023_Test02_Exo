@@ -9,7 +9,7 @@ namespace Testing_02_Exo.BLL.Interfaces
 {
     public interface IPurchaseService
     {
-        public IEnumerable<Purchase> GetById();
+        public Purchase? GetById(int id);
         public IEnumerable<Purchase> GetOrderOfDay();
         public IEnumerable<Purchase> GetOrderOfDay(DateTime date);
 
